@@ -1,0 +1,8 @@
+http://stackoverflow.com/questions/5256733/convert-xlsx-file-to-csv-using-batch
+
+for i in *.xlsx;
+ do
+  filename=$(basename "$i" .xlsx);
+  outext=".csv" 
+  xlsx2csv $i $filename$outext
+done
